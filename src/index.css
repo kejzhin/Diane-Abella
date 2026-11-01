@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  --color-brand-accent: #E55E99;
+  --color-brand-accent-hover: #D44785;
+  --color-brand-pastel: #FFC8DC;
+  --color-brand-light: #FFF0F6;
+  --color-brand-border: #FFB8D2;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  background-color: #FFF8FA;
+  color: #1E293B;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+/* Custom delicate scrollbar themed with #FFC8DC and #E55E99 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFC8DC;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E55E99;
+}
