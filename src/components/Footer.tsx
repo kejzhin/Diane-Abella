@@ -43,6 +43,17 @@ export const Footer: React.FC = () => {
 
         <div className="mt-8 pt-6 border-t border-[#FFC8DC]/40 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} {PORTFOLIO_DATA.personal.fullName}. All rights reserved.</p>
+          <p className="flex items-center gap-1.5 text-slate-500">
+            <span>Created by</span>
+            <a
+              href="https://www.facebook.com/Kejzhin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#E55E99] hover:text-[#D44785] hover:underline transition-colors"
+            >
+              Jeric De Los Reyes
+            </a>
+          </p>
         </div>
       </div>
     </footer>
